@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Appearance">
+        <SwitchPreferenceCompat
+            app:key="dark_theme"
+            app:title="Dark Theme"
+            app:summary="Use dark background (recommended)"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Lyrics &amp; Transcription">
+        <EditTextPreference
+            app:key="openai_api_key"
+            app:title="OpenAI API Key"
+            app:summary="Required for automatic lyrics transcription"
+            app:useSimpleSummaryProvider="false"
+            app:inputType="textPassword" />
+
+        <Preference
+            app:key="lyrics_info"
+            app:title="How lyrics work"
+            app:summary="1) Manual lyrics saved in app\n2) Sidecar .lrc/.txt file next to song\n3) OpenAI Whisper auto-transcription (needs API key)" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Playback">
+        <SwitchPreferenceCompat
+            app:key="stop_on_headset_unplug"
+            app:title="Pause on headset unplug"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="resume_on_headset_plug"
+            app:title="Resume on headset plug"
+            app:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+        <Preference
+            app:key="version"
+            app:title="Version"
+            app:summary="1.0" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

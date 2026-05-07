@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary"
+    android:padding="24dp">
+
+    <!-- Preset Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preset"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
+        android:paddingBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/presetSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/spinner_bg"
+        android:paddingHorizontal="12dp"
+        android:popupBackground="@color/surface_card" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/surface_elevated"
+        android:layout_marginVertical="24dp" />
+
+    <!-- EQ Bands -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREQUENCY BANDS"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
+        android:paddingBottom="16dp" />
+
+    <!-- Band 0: Sub bass ~60Hz -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+        <TextView android:id="@+id/eqLabel0" android:layout_width="56dp" android:layout_height="wrap_content" android:text="60Hz" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <SeekBar android:id="@+id/eqBand0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/accent" android:thumbTint="@color/text_primary" android:progressBackgroundTint="@color/seekbar_bg" />
+    </LinearLayout>
+
+    <!-- Band 1: Bass ~230Hz -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+        <TextView android:id="@+id/eqLabel1" android:layout_width="56dp" android:layout_height="wrap_content" android:text="230Hz" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <SeekBar android:id="@+id/eqBand1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/accent" android:thumbTint="@color/text_primary" android:progressBackgroundTint="@color/seekbar_bg" />
+    </LinearLayout>
+
+    <!-- Band 2: Mids ~910Hz -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+        <TextView android:id="@+id/eqLabel2" android:layout_width="56dp" android:layout_height="wrap_content" android:text="910Hz" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <SeekBar android:id="@+id/eqBand2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/accent" android:thumbTint="@color/text_primary" android:progressBackgroundTint="@color/seekbar_bg" />
+    </LinearLayout>
+
+    <!-- Band 3: High mids ~3.6kHz -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+        <TextView android:id="@+id/eqLabel3" android:layout_width="56dp" android:layout_height="wrap_content" android:text="3.6kHz" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <SeekBar android:id="@+id/eqBand3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/accent" android:thumbTint="@color/text_primary" android:progressBackgroundTint="@color/seekbar_bg" />
+    </LinearLayout>
+
+    <!-- Band 4: Treble ~14kHz -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+        <TextView android:id="@+id/eqLabel4" android:layout_width="56dp" android:layout_height="wrap_content" android:text="14kHz" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <SeekBar android:id="@+id/eqBand4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:progressTint="@color/accent" android:thumbTint="@color/text_primary" android:progressBackgroundTint="@color/seekbar_bg" />
+    </LinearLayout>
+
+</LinearLayout>

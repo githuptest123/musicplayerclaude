@@ -1,0 +1,4 @@
+-keep class com.musicplayer.app.models.** { *; }
+-keep class com.musicplayer.app.services.** { *; }
+-keepattributes *Annotation*
+-keep class com.google.gson.** { *; }

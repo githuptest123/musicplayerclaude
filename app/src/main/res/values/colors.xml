@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette - deep teal/dark -->
+    <color name="primary">#1A1A2E</color>
+    <color name="primary_dark">#16213E</color>
+    <color name="primary_variant">#0F3460</color>
+    <color name="accent">#E94560</color>
+    <color name="accent_light">#FF6B8A</color>
+
+    <!-- Surface colors -->
+    <color name="surface">#1E1E2E</color>
+    <color name="surface_elevated">#252535</color>
+    <color name="surface_card">#2A2A3E</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0C0</color>
+    <color name="text_hint">#6A6A8A</color>
+
+    <!-- Light theme -->
+    <color name="primary_light">#F5F5FF</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_elevated_light">#F0F0FA</color>
+    <color name="text_primary_light">#1A1A2E</color>
+    <color name="text_secondary_light">#4A4A6A</color>
+
+    <!-- Player specific -->
+    <color name="seekbar_progress">#E94560</color>
+    <color name="seekbar_thumb">#FFFFFF</color>
+    <color name="seekbar_bg">#3A3A5A</color>
+    <color name="mini_player_bg">#1E1E2E</color>
+
+    <!-- Status / nav -->
+    <color name="statusBar">#0F0F1E</color>
+    <color name="navBar">#0F0F1E</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="overlay_dark">#CC000000</color>
+</resources>
